@@ -1,18 +1,18 @@
 # dadosmercadolivre
 
-Para rodar o web scraping
+Para rodar o Web Scraping
 
 ```bash
 scrapy crawl mercadolivre -o ../../data/data.jsonl
 ```
 
-Para rodar o PANDAS tem que fazer isso dentro da pasta SRC
+Para rodar o Pandas dentro da pasta SRC
 
 ```bash
 python transformacao/main.py
 ```
 
-Para rodar o Streamlit
+Para rodar o Streamlit dentro da pasta SRC
 
 ```
 streamlit run dashboard/app.py
