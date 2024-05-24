@@ -2,6 +2,8 @@ import pandas as pd
 import sqlite3
 from datetime import datetime
 
+jsonl_path = '../data/data.jsonl'
+
 df = pd.read_json('..\data\data.jsonl', lines=True)
 
 pd.options.display.max_columns = None
