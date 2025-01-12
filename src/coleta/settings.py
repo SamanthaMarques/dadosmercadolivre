@@ -7,17 +7,18 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = "coleta"
+#Deploy
+BOT_NAME = "coleta" # Nome do bot Scrapy
 
-SPIDER_MODULES = ["coleta.spiders"]
-NEWSPIDER_MODULE = "coleta.spiders"
+SPIDER_MODULES = ["coleta.spiders"] # Módulos onde as classes dos spiders estão localizadas
+NEWSPIDER_MODULE = "coleta.spiders" # Diretório onde os novos spiders serão criados
 
-USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0'
+USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 OPR/109.0.0.0' # Define o User-Agent
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = "coleta (+http://www.yourdomain.com)"
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = False
+ROBOTSTXT_OBEY = False # False ignora as restrições de scraping
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -88,6 +89,8 @@ ROBOTSTXT_OBEY = False
 #HTTPCACHE_STORAGE = "scrapy.extensions.httpcache.FilesystemCacheStorage"
 
 # Set settings whose default value is deprecated to a future-proof value
+
+# Define configurações para compatibilidade futura e para exportação de dados em UTF-8
 REQUEST_FINGERPRINTER_IMPLEMENTATION = "2.7"
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 FEED_EXPORT_ENCODING = "utf-8"
